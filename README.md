@@ -72,7 +72,7 @@ forge script script/DeployStakingContract.s.sol:DeployStakingContract --rpc-url 
 
 ``` bash
 forge verify-contract <YOUR_CONTRACT_DEPLOYED_ADDRESS> src/StakingContract.sol:StakingContract --chain 11155111 --etherscan-api-key <YOUR_API_KEY> --constructor-args $(cast abi-encode "constructor(address,uint256,uint256,uint256,uint256)" 0x86aA2BCe8F297401baF7730421D90516783A707f 250 86400 5 50)
-
+```
 ## Security Features
 
 - Reentrancy protection
